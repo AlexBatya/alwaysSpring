@@ -1,0 +1,208 @@
+:root {
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  :root {
+    font-size: calc(8px + 13.6 * ((100vw - 320px) / 1920));
+  }
+}
+@media (min-width: 767px) {
+  :root {
+    font-size: calc(8px + 8 * (100vw / 1920));
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1920px) and (max-width: 767px) {
+  :root {
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1920));
+  }
+}
+@media (min-width: 1920px) and (min-width: 767px) {
+  :root {
+    font-size: calc(16px + 0 * (100vw / 1920));
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Forum", cursive;
+  background: #3B181E;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: url("../img/fon.png") top/cover no-repeat;
+  background-attachment: fixed;
+}
+header .header__body__container .head__menu {
+  padding: 50px 2.5rem 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__body__container .head__menu .logo img {
+  width: 100%;
+}
+header .header__body__container .head__menu nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.75rem;
+  margin: 0;
+  padding: 0;
+}
+header .header__body__container .head__menu nav ul li {
+  list-style: none;
+}
+header .header__body__container .head__menu nav ul li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+header .header__body__container .head__menu .number {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+header .header__body__container .head__text {
+  margin: 189px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .header__body__container .head__text h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.5rem;
+  line-height: 132px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+header .header__body__container .head__text button {
+  cursor: pointer;
+  margin: 80px 0 0 0;
+  padding: 19px 30px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+header .header__body__container .head__text button:hover {
+  background-color: white;
+  color: #3B181E;
+}
+header .header__body__container .btms {
+  padding: 0 40px 0 40px;
+  margin: 45px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+header .header__body__container .btms .messengers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+header .header__body__container .btms .word {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+header .header__body__container .btms .word img {
+  width: 13px;
+  height: 13px;
+}
+header .header__body__container .btms .word .text {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  writing-mode: vertical-rl;
+}
+
+main {
+  padding: 186px 0 0 0;
+  position: relative;
+  z-index: 1;
+}
+main .main__shell {
+  position: absolute;
+  z-index: 1;
+  top: 188px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.75rem;
+  line-height: 243px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.03;
+}
+main .main__body__container h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 33px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .main__body__container .border__shell {
+  margin: 13px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+main .main__body__container .border__shell .borderLine {
+  border-top: 1.5px solid white;
+  width: 85px;
+}/*# sourceMappingURL=style.css.map */
