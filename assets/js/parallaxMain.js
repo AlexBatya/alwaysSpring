@@ -4,7 +4,4 @@ var parallaxInstance = new Parallax(scene,{
 });
 
 
-var scene = document.getElementById('sceneNum');
-var parallaxInstance = new Parallax(scene,{
-    relativeInput: true
-});
+var rellax = new Rellax('.rellax');

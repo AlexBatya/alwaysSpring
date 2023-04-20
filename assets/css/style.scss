@@ -43,6 +43,18 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
+@keyframes seeMore{
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 10px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
 button{
     cursor: pointer;
     padding: 19px 30px;
@@ -148,8 +160,8 @@ header{
                 
             }
             .btms{
-                padding: 0 40px 0 40px;
-                margin: 45px 0 0 0;
+                padding: 0 40px 0 40px ;
+                margin: 45px 0 0 0 ;
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
