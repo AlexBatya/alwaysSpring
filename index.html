@@ -17,11 +17,11 @@
                     <div class="logo"><img src="./assets/img/logo.svg" alt=""></div>
                     <nav>
                         <ul>
-                            <li><a href="#">УСЛУГИ</a></li>
-                            <li><a href="#">АКЦИИ</a></li>
-                            <li><a href="#">КОМПОЗИЦИИ</a></li>
-                            <li><a href="#">ПОДАРОЧНЫЕ КАРТЫ</a></li>
-                            <li><a href="#">НАШИ ПАРТНЁРЫ</a></li>
+                            <li><a href="#one">УСЛУГИ</a></li>
+                            <li><a href="#two">АКЦИИ</a></li>
+                            <li><a href="#three">КОМПОЗИЦИИ</a></li>
+                            <li><a href="#fore">ПОДАРОЧНЫЕ КАРТЫ</a></li>
+                            <li><a href="#five">НАШИ ПАРТНЁРЫ</a></li>
                         </ul>
                     </nav>
                     <div class="number">+7 (916) 392 17 77</div>
@@ -51,7 +51,7 @@
         <div class="main__shell">каталог услуг</div>
         <div class="main__body">
             <article class="main__body__container">
-                <h2 >Каталог услуг</h2>
+                <h2 id = 'one'>Каталог услуг</h2>
                 <div class = "border__shell">
                     <div class="borderLine"></div>
                 </div>
@@ -130,9 +130,9 @@
                         </a>
                     </div>
                 </article>
-                <section class = 'proposal'>
+                <section id = 'two' class = 'proposal'>
                     <div class="proposal__text">
-                        <h3>Акционные <br> предложения</h3>
+                        <h3 >Акционные <br> предложения</h3>
                         <div class="borderBlock"></div>
                         <p>При заказе свадебного  предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
                         <button class = 'proposal__btm'>заказать оформление</button>
@@ -144,7 +144,7 @@
                         <div class="borderImgall"></div>
                     </div>
                 </section>
-                <section class = 'composition'>
+                <section id = 'three' class = 'composition'>
                     <div class="composition__img">
                         <div class="composition__img__one">
                             <img src="./assets/img/roses.png" alt="">
@@ -152,7 +152,7 @@
                         <div class="borderImgall"></div>
                     </div>
                     <div class="composition__text">
-                        <h3>композиции и <br> шляпные коробки</h3>
+                        <h3 >композиции и <br> шляпные коробки</h3>
                         <div class="borderBlock"></div>
                         <p>Композиции могут собираться в любой таре: корзинке, шляпной коробке, вазочке или декоративных ящиках. Их нет необходимости ставить в вазу, как букеты, потому что цветы питаются при помощи специальной флористической губки под названием оазис. Композиции очень удобные для подарка, или оформления мероприятия.</p>
                         <button class = 'composition__btm'>заказать</button>
@@ -164,7 +164,7 @@
                         </div>
                     </div>
                 </section>
-                <h2>Подарочные карты</h2>
+                <h2 id = 'fore'>Подарочные карты</h2>
                 <div class = "border__shell">
                     <div class="borderLine"></div>
                 </div>
@@ -212,7 +212,7 @@
                         </div>
                     </div>
                 </section>
-                <h2>наши поставщики</h2>
+                <h2 id = 'five'>наши поставщики</h2>
                 <div class = "border__shell">
                     <div class="borderLine"></div>
                 </div>
@@ -267,5 +267,32 @@
     <script src = './assets//js/parallaxMain.js'></script>
     <script src = './assets/js/popup.js'></script>
     <script src = './assets/js/style.js'></script>
+
+    <script>
+        $(document).ready(()=>{
+            const $head__menu = $('.head__menu');
+            const $lis= $('.head__menu>nav>ul>li>a');
+            const ids = ['one','two','three','fore','five'];
+
+            // $lis.each((index)=>{
+            //     $(this).click(event =>{
+            //         $('html,body').animate({
+            //             scrollTop: $(`#${ids[index]}`).offset().top},
+            //             'slow');
+            //     })
+            // })
+            $head__menu.click(event =>{
+                let $target = $(event.target);
+                console.log($target.className)
+                if($target.tagName == $lis[0]){
+                    $('html,body').animate({
+                        scrollTop: $(`#${ids[0]}`).offset().top},
+                        'slow');
+                }
+            })
+            
+        
+        })
+    </script>
 </body>
 </html>
