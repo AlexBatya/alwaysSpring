@@ -252,14 +252,14 @@ main{
                 align-items: flex-start;
                 flex-wrap: wrap;
                 .product{
-                    gap: widthVW(40px);
+                    gap: widthVW(30px);
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     .block{
                         border: 1px solid rgba(255, 255, 255, 0.2);
-                        padding: 10px;
+                        padding: heightVH(10px) widthVW(10px);
                         .part1{
                             width: widthVW(330px);
                             height: heightVH(223px);
