@@ -1,17 +1,27 @@
-$maxWidth: 1920;
+$maxWidthh: 1920;
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $addMobSize: $addSize + $addSize * 0.7;
     @media (max-width: 767px) {
-        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidthh}));
     }
     @media (min-width: 767px) {
-        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidthh}));
     }
 }
 
 @function maxWightper($maxWidth,$width){
     @return (100% * $width)/$maxWidth
+};
+
+$maxHeight: 870px;
+$maxWidth: 1920px;
+
+@function heightVH($pixel){
+    @return ($pixel*100vh)/$maxHeight
+};
+@function widthVW($pixel){
+    @return ($pixel*100vw)/$maxWidth
 };
 
 :root{
@@ -32,6 +42,7 @@ body{
     box-sizing: border-box;
     font-family: 'Forum', cursive;
     background: #3B181E;
+    overflow-x: hidden;
 }
 
 a{
@@ -78,7 +89,7 @@ button:hover{
 }
 
 header{
-    padding: 0 0 30px 0;
+    padding: 0 0 heightVH(30px) 0;
     height: 100vh;
     position: relative;
     top: 0;
@@ -90,7 +101,7 @@ header{
     .header__body{
         &__container{
             .head__menu{
-                padding: 50px 2.5rem 0 2.5rem;
+                padding: heightVH(50px) widthVW(40px) 0 widthVW(40px);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -131,13 +142,14 @@ header{
                 }
             }
             .head__text{
-                margin: 189px 0 0 0;
+                margin: heightVH(189px) 0 0 0;
+                // margin: 189px 0 0 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 h1{
-                    margin: 0 0 80px 0;
+                    margin: 0 0 heightVH(80px) 0;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 7.5rem;
@@ -150,7 +162,7 @@ header{
                 
             }
             .btms{
-                padding: 0 40px 45px 40px ;
+                padding: 0 widthVW(40px) heightVH(45px) widthVW(40px) ;
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
@@ -159,7 +171,7 @@ header{
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    gap: 24px;
+                    gap: heightVH(24px);
                 }
                 .word{
                     position: relative;
@@ -189,13 +201,13 @@ header{
 }
 
 main{
-    padding: 186px 0 0 0;
+    padding: heightVH(186px) 0 0 0;
     position: relative;
     z-index: 1;
     .main__shell{
         position: absolute;
         z-index: 0;
-        top: 188px;
+        top: heightVH(188px);
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -233,14 +245,14 @@ main{
                 }
             }
             .products{
-                max-width: 1500px;
-                margin: 94px auto 0 auto;
+                max-width: widthVW(1500px);
+                margin: heightVH(94px) auto 0 auto;
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
                 flex-wrap: wrap;
                 .product{
-                    gap: 40px;
+                    gap: widthVW(40px);
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -249,47 +261,47 @@ main{
                         border: 1px solid rgba(255, 255, 255, 0.2);
                         padding: 10px;
                         .part1{
-                            width: 330px;
-                            height: 223px;
+                            width: widthVW(330px);
+                            height: heightVH(223px);
                             background: url('../img/01.png') top / cover rgba(0, 0, 0, 0.7) no-repeat;
                         }
                         .part5{
-                            width: 330px;
-                            height: 245px;
+                            width: widthVW(330px);
+                            height: heightVH(245px);
                             background: url('../img/05.png') top / cover rgba(0, 0, 0, 0.7) no-repeat;
                         }
                         .part2{
-                            width: 330px;
-                            height: 610px;
+                            width: widthVW(330px);
+                            height: heightVH(610px);
                             background: url('../img/02.png') top / cover rgba(0, 0, 0, 0.7) no-repeat;
                         }
                         .part3{
-                            width: 330px;
-                            height: 370px;
+                            width: widthVW(330px);
+                            height: heightVH(370px);
                             background: url('../img/03.png') top / cover rgba(0, 0, 0, 0.7) no-repeat;
                         }
                         .part6{
-                            width: 330px;
-                            height: 146px;
+                            width: widthVW(330px);
+                            height: heightVH(146px);
                             background: url('../img/06.png') top / cover rgba(0, 0, 0, 0.7) no-repeat;
                         }
                         .part4{
-                            width: 330px;
-                            height: 147px;
+                            width: widthVW(330px);
+                            height: heightVH(147px);
                             background: url('../img/04.png') top / cover rgba(0, 0, 0, 0.7) no-repeat;
                         }
                         .part7{
-                            width: 330px;
-                            height: 370px;
+                            width: widthVW(330px);
+                            height: heightVH(370px);
                             background: url('../img/07.png') top / cover rgba(0, 0, 0, 0.7) no-repeat;
                         }
                         .imeg{
                             .numberImg{
-                                padding: 40px 0 0 23px;
+                                padding: heightVH(40px) 0 0 widthVW(23px);
                                 font-style: normal;
                                 font-weight: 400;
                                 font-size: 1.25rem;
-                                line-height: 22px;
+                                line-height: 110%;
                                 text-transform: uppercase;
                                 color: #FFFFFF;
                             }

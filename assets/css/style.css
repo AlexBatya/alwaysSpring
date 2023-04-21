@@ -35,6 +35,7 @@ body {
   box-sizing: border-box;
   font-family: "Forum", cursive;
   background: #3B181E;
+  overflow-x: hidden;
 }
 
 a {
@@ -79,7 +80,7 @@ button:hover {
 }
 
 header {
-  padding: 0 0 30px 0;
+  padding: 0 0 3.4482758621vh 0;
   height: 100vh;
   position: relative;
   top: 0;
@@ -89,7 +90,7 @@ header {
   background-attachment: fixed;
 }
 header .header__body__container .head__menu {
-  padding: 50px 2.5rem 0 2.5rem;
+  padding: 5.7471264368vh 2.0833333333vw 0 2.0833333333vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,14 +126,14 @@ header .header__body__container .head__menu .number {
   color: #FFFFFF;
 }
 header .header__body__container .head__text {
-  margin: 189px 0 0 0;
+  margin: 21.724137931vh 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 header .header__body__container .head__text h1 {
-  margin: 0 0 80px 0;
+  margin: 0 0 9.1954022989vh 0;
   font-style: normal;
   font-weight: 400;
   font-size: 7.5rem;
@@ -143,7 +144,7 @@ header .header__body__container .head__text h1 {
   color: #FFFFFF;
 }
 header .header__body__container .btms {
-  padding: 0 40px 45px 40px;
+  padding: 0 2.0833333333vw 5.1724137931vh 2.0833333333vw;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -153,7 +154,7 @@ header .header__body__container .btms .messengers {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 24px;
+  gap: 2.7586206897vh;
 }
 header .header__body__container .btms .word {
   position: relative;
@@ -179,14 +180,14 @@ header .header__body__container .btms .word .text {
 }
 
 main {
-  padding: 186px 0 0 0;
+  padding: 21.3793103448vh 0 0 0;
   position: relative;
   z-index: 1;
 }
 main .main__shell {
   position: absolute;
   z-index: 0;
-  top: 188px;
+  top: 21.6091954023vh;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -224,15 +225,15 @@ main .main__body__container .border__shell .borderLine {
   width: 85px;
 }
 main .main__body__container .products {
-  max-width: 1500px;
-  margin: 94px auto 0 auto;
+  max-width: 78.125vw;
+  margin: 10.8045977011vh auto 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 main .main__body__container .products .product {
-  gap: 40px;
+  gap: 2.0833333333vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,46 +244,46 @@ main .main__body__container .products .product .block {
   padding: 10px;
 }
 main .main__body__container .products .product .block .part1 {
-  width: 330px;
-  height: 223px;
+  width: 17.1875vw;
+  height: 25.632183908vh;
   background: url("../img/01.png") top/cover rgba(0, 0, 0, 0.7) no-repeat;
 }
 main .main__body__container .products .product .block .part5 {
-  width: 330px;
-  height: 245px;
+  width: 17.1875vw;
+  height: 28.1609195402vh;
   background: url("../img/05.png") top/cover rgba(0, 0, 0, 0.7) no-repeat;
 }
 main .main__body__container .products .product .block .part2 {
-  width: 330px;
-  height: 610px;
+  width: 17.1875vw;
+  height: 70.1149425287vh;
   background: url("../img/02.png") top/cover rgba(0, 0, 0, 0.7) no-repeat;
 }
 main .main__body__container .products .product .block .part3 {
-  width: 330px;
-  height: 370px;
+  width: 17.1875vw;
+  height: 42.5287356322vh;
   background: url("../img/03.png") top/cover rgba(0, 0, 0, 0.7) no-repeat;
 }
 main .main__body__container .products .product .block .part6 {
-  width: 330px;
-  height: 146px;
+  width: 17.1875vw;
+  height: 16.7816091954vh;
   background: url("../img/06.png") top/cover rgba(0, 0, 0, 0.7) no-repeat;
 }
 main .main__body__container .products .product .block .part4 {
-  width: 330px;
-  height: 147px;
+  width: 17.1875vw;
+  height: 16.8965517241vh;
   background: url("../img/04.png") top/cover rgba(0, 0, 0, 0.7) no-repeat;
 }
 main .main__body__container .products .product .block .part7 {
-  width: 330px;
-  height: 370px;
+  width: 17.1875vw;
+  height: 42.5287356322vh;
   background: url("../img/07.png") top/cover rgba(0, 0, 0, 0.7) no-repeat;
 }
 main .main__body__container .products .product .block .imeg .numberImg {
-  padding: 40px 0 0 23px;
+  padding: 4.5977011494vh 0 0 1.1979166667vw;
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 22px;
+  line-height: 110%;
   text-transform: uppercase;
   color: #FFFFFF;
 }
