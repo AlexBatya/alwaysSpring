@@ -65,7 +65,7 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 13px;
+  line-height: 109%;
   text-align: center;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -112,7 +112,7 @@ header .header__body__container .head__menu nav ul li a {
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 22px;
+  line-height: 110%;
   letter-spacing: 0.06em;
   color: #FFFFFF;
 }
@@ -120,7 +120,7 @@ header .header__body__container .head__menu .number {
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 22px;
+  line-height: 110%;
   letter-spacing: 0.06em;
   color: #FFFFFF;
 }
@@ -136,15 +136,14 @@ header .header__body__container .head__text h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 7.5rem;
-  line-height: 132px;
+  line-height: 110%;
   text-align: center;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 header .header__body__container .btms {
-  padding: 0 40px 0 40px;
-  margin: 45px 0 0 0;
+  padding: 0 40px 45px 40px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -173,7 +172,7 @@ header .header__body__container .btms .word .text {
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 22px;
+  line-height: 110%;
   letter-spacing: 0.06em;
   color: #FFFFFF;
   writing-mode: vertical-rl;
@@ -194,7 +193,7 @@ main .main__shell {
   font-style: normal;
   font-weight: 400;
   font-size: 13.75rem;
-  line-height: 243px;
+  line-height: 110%;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -210,7 +209,7 @@ main .main__body__container h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 1.875rem;
-  line-height: 33px;
+  line-height: 110%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -282,7 +281,7 @@ main .main__body__container .products .product .block .imeg .numberImg {
   padding: 40px 0 0 23px;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 22px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -296,7 +295,7 @@ main .main__body__container .products .product .block h4 {
   margin: 20px 0 0 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 170%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -317,7 +316,7 @@ main .main__body__container .products .product .block small {
   margin: 28px 0 0 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 13px;
   text-align: center;
   letter-spacing: 0.15em;
@@ -345,7 +344,7 @@ main .main__body__container .proposal__text h3 {
   margin: 0 0 31px 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 55px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -360,7 +359,7 @@ main .main__body__container .proposal__text p {
   margin: 25px 0 31px 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125;
   line-height: 170%;
   color: #FFFFFF;
 }
