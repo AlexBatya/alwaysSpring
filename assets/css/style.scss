@@ -24,6 +24,10 @@ $maxWidth: 1920px;
     @return ($pixel*100vw)/$maxWidth
 };
 
+// @function textSize($pixel){
+//     @return ($pixel/16px);
+// };
+
 :root{
     font-size: 16px;
     @include adaptiv-font(16, 8);
@@ -312,8 +316,8 @@ main{
                             
                         }
                         h4{
-                            max-width: 290px;
-                            margin: 20px 0 0 0;
+                            max-width: widthVW(290px);
+                            margin: heightVH(20px) 0 0 0;
                             font-style: normal;
                             font-weight: 400;
                             font-size: 1rem;
@@ -337,7 +341,7 @@ main{
 
                         small{
                             display: inline-block;
-                            margin: 28px 0 0 0;
+                            margin: heightVH(28px) 0 0 0;
                             font-style: normal;
                             font-weight: 400;
                             font-size: 0.75rem;
@@ -352,7 +356,7 @@ main{
             }
             .proposal{
                 max-width: 1200px;
-                margin: 256px auto 0 auto;
+                margin:heightVH(255px) auto 0 auto;
                 display: grid;
                 gap: 1%;
                 grid-template-columns: 49% 49%;
@@ -360,28 +364,28 @@ main{
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-                    width: 697px;
-                    height: 410px;
+                    width: widthVW(676px);
+                    height: heightVH(410px);
                     position: relative;
                     top: 0;
                     left: 0;
                     h3{
-                        margin: 0 0 31px 0;
+                        margin: 0 0 heightVH(31px) 0;
                         font-style: normal;
                         font-weight: 400;
                         font-size: 3.125rem;
-                        line-height: 55px;
+                        line-height: 110%;
                         letter-spacing: 0.09em;
                         text-transform: uppercase;
                         color: #FFFFFF;
                     }
                     .borderBlock{
                         border-top: 2px solid white;
-                        width: 86px;
+                        width: widthVW(86px);
                     }
                     p{
-                        max-width: 400px;
-                        margin: 25px 0 31px 0;
+                        max-width: widthVW(400px);
+                        margin: heightVH(25px) 0 heightVH(31px) 0;
                         font-style: normal;
                         font-weight: 400;
                         font-size: 1.125;
@@ -393,8 +397,8 @@ main{
                     }
                 }
                 &__img{
-                    width: 697px;
-                    height: 410px;
+                    width: widthVW(697px);
+                    height: heightVH(410px);
                     position: relative;
                     display: block;
                     &__one{
@@ -403,8 +407,8 @@ main{
                         display: block;
                         top: -22px;
                         left: -27px;
-                        width: 697px;
-                        height: 410px;
+                        width: widthVW(697px);
+                        height: heightVH(410px);
                         position: absolute;
                         z-index: 1;
                     }
@@ -413,8 +417,8 @@ main{
                     }
                     .borderImgall{
                         display: block;
-                        width: 697px;
-                        height: 410px;
+                        width: widthVW(697px);
+                        height: heightVH(410px);
                         border: 1px solid rgba(255, 255, 255, 0.2);
                         position: absolute;
                         z-index: 2;
@@ -425,16 +429,17 @@ main{
             }
             .composition{
                 max-width: 1600px;
-                margin: 256px auto 246px auto;
+                margin: heightVH(256px) auto heightVH(246px) auto;
                 display: grid;
-                gap: 10%;
-                grid-template-columns: 55% 35%;
+                gap: widthVW(40px);
+                grid-template-columns: 60% 40%;
+                justify-content: center;
                 &__text{
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-                    width: 996px;
-                    height: 855px;
+                    width: widthVW(996px);
+                    height: heightVH(855px);
                     position: relative;
                     top: 0;
                     left: 0;
@@ -442,39 +447,43 @@ main{
                         margin: 0 0 31px 0;
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 50px;
-                        line-height: 55px;
+                        font-size: 3.125rem;
+                        line-height: 110%;
                         letter-spacing: 0.09em;
                         text-transform: uppercase;
                         color: #FFFFFF;
                     }
                     .borderBlock{
                         border-top: 2px solid white;
-                        width: 86px;
+                        width: widthVW(86px);
                     }
                     p{
-                        max-width: 650px;
+                        max-width: widthVW(650px);
                         margin: 25px 0 31px 0;
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 18px;
+                        font-size: 1.125rem;
                         line-height: 170%;
                         color: #FFFFFF;
                     }
                     .composition__btm{
-                        max-width: 260px;
+                        max-width: widthVW(260px);
                     }
                     .comprsition__slider{
-                        margin: 100px 0 0 0;
+                        margin: heightVH(100px) 0 0 0;
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        gap: 23px;
+                        gap: widthVW(23px);
+                        img{
+                            // width: 50%;
+                            width: widthVW(123px);
+                        }
                     }
                 }
                 &__img{
-                    max-width: 996px;
-                    max-height: 801px;
+                    max-width: widthVW(996px);
+                    max-height: heightVH(801px);
                     position: relative;
                     display: block;
                     &__one{
@@ -483,17 +492,17 @@ main{
                         display: block;
                         top: -22px;
                         left: -27px;
-                        width: 697px;
-                        height: 410px;
+                        width: widthVW(697px);
+                        height: heightVH(410px);
                         position: absolute;
                         z-index: 1;
                     }
                     img{
-                        max-width: 1000px;
-                        max-height: 855px;
+                        max-width: widthVW(1000px);
+                        max-height: heightVH(855px);
                     }
                     .borderImgall{
-                        width: 996px;
+                        width: widthVW(996px);
                         height: 100%;
                         display: block;
                         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -505,26 +514,25 @@ main{
                 }                
             }
             .gifts{
-                max-width: 1200px;
-                margin: 60px auto 271px auto;
+                max-width: widthVW(1200px);
+                // max-width: 1200px;
+                margin: heightVH(60px) auto heightVH(271px) auto;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                flex-wrap: wrap;
                 .card:hover{
-                     
-                    // transform: scale3d(0,0,1);
-                    // transform: rotateZ(30deg);
                     transform: rotateZ(10deg);
                 }
                 .card{
                     transition: 2s;
-                    width: 348px;
-                    height: 576px;
+                    width: widthVW(348px);
+                    height: heightVH(576px);
                     background: #281014;
                     box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.5);
                     border-radius: 10px 10px 0px 0px;
                     &__name{
-                        height: 219px;
+                        height: heightVH(219px);
                         position: relative;
                         display: flex;
                         justify-content: center;
@@ -532,11 +540,13 @@ main{
                         background: #0A0A0E;
                         border-radius: 10px;
                         .usor__up{
+                            width: widthVW(122px);
                             position: absolute;
                             top: 5px;
                             left: 5px;
                         }
                         .usor__down{
+                            width: widthVW(122px);
                             transform: rotate(180deg);
                             position: absolute;
                             bottom: 5px;
@@ -559,8 +569,8 @@ main{
                             right: 5px;
                             font-style: normal;
                             font-weight: 400;
-                            font-size: 21px;
-                            line-height: 23px;
+                            font-size: 1.2125rem;
+                            line-height: 110%;
                             letter-spacing: 0.06em;
                             color: #FFFFFF;
                         }
@@ -571,16 +581,17 @@ main{
                         align-items: center;
                         flex-direction: column;
                         p{
-                            max-width: 273px;;
+                            max-width: widthVW(273px);
                             margin: 99px 0 27px 0;
                             font-style: normal;
                             font-weight: 400;
-                            font-size: 18px;
+                            font-size: 1.125rem;
                             line-height: 150%;
                             text-align: center;
                             color: #FFFFFF;
                         }
                         img{
+                            width: 100%;
                             margin: 0 0 20px 0;
                         }
                     }
