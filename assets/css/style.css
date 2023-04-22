@@ -400,7 +400,7 @@ main .main__body__container .proposal__img .borderImgall {
   left: 0;
 }
 main .main__body__container .composition {
-  max-width: 1600px;
+  max-width: 83.3333333333vw;
   margin: 29.4252873563vh auto 28.275862069vh auto;
   display: grid;
   gap: 2.0833333333vw;
@@ -533,8 +533,8 @@ main .main__body__container .gifts .card__name .price {
   left: 5px;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 23px;
+  font-size: 1.2125rem;
+  line-height: 110%;
   letter-spacing: 0.06em;
   color: #FFFFFF;
 }
@@ -557,7 +557,7 @@ main .main__body__container .gifts .card__discription {
 }
 main .main__body__container .gifts .card__discription p {
   max-width: 14.21875vw;
-  margin: 99px 0 27px 0;
+  margin: 11.3793103448vh 0 3.1034482759vh 0;
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
@@ -567,17 +567,18 @@ main .main__body__container .gifts .card__discription p {
 }
 main .main__body__container .gifts .card__discription img {
   width: 100%;
-  margin: 0 0 20px 0;
+  margin: 0 0 2.2988505747vh 0;
 }
 main .main__body__container .suppliers {
   max-width: 1200px;
-  margin: 68px auto 0 auto;
+  margin: 3.5416666667vw auto 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 1.7708333333vw 3.908045977vh;
 }
 main .main__body__container .suppliers .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
