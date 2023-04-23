@@ -355,6 +355,7 @@ main{
                 }
             }
             .proposal{
+                padding: 0 15px;
                 max-width: 1200px;
                 margin:heightVH(255px) auto 0 auto;
                 display: grid;
@@ -600,6 +601,7 @@ main{
             }
             .suppliers{
                 max-width: 1200px;
+                max-width: widthVW(1200px);
                 margin: widthVW(68px) auto 0 auto;
                 display: flex;
                 flex-direction: column;
@@ -608,6 +610,25 @@ main{
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
+                    
+                }
+                .cards:nth-child(1n){
+                    img{
+                        width: widthVW(370px);
+                        height: heightVH(122px);
+                    }
+                }
+                .cards:nth-child(2n){
+                    img{
+                        width: widthVW(571px);
+                        height: heightVH(190px);
+                    }
+                }
+                .cards:nth-child(3n){
+                    img{
+                        width: widthVW(268px);
+                        height: heightVH(90px);
+                    }
                 }
             }
         }

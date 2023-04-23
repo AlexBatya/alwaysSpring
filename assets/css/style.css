@@ -325,6 +325,7 @@ main .main__body__container .products .product .block small {
   color: #FFFFFF;
 }
 main .main__body__container .proposal {
+  padding: 0 15px;
   max-width: 1200px;
   margin: 29.3103448276vh auto 0 auto;
   display: grid;
@@ -571,6 +572,7 @@ main .main__body__container .gifts .card__discription img {
 }
 main .main__body__container .suppliers {
   max-width: 1200px;
+  max-width: 62.5vw;
   margin: 3.5416666667vw auto 0 auto;
   display: flex;
   flex-direction: column;
@@ -580,6 +582,18 @@ main .main__body__container .suppliers .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+main .main__body__container .suppliers .cards:nth-child(1n) img {
+  width: 19.2708333333vw;
+  height: 14.0229885057vh;
+}
+main .main__body__container .suppliers .cards:nth-child(2n) img {
+  width: 29.7395833333vw;
+  height: 21.8390804598vh;
+}
+main .main__body__container .suppliers .cards:nth-child(3n) img {
+  width: 13.9583333333vw;
+  height: 10.3448275862vh;
 }
 
 #grayCard {
