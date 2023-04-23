@@ -84,7 +84,7 @@ $(document).ready(()=>{
     }
 
     //Попапы, неменяющиеся 
-    // PopStart($('.menu'), animateLookFor);
+    PopStart($('.menu'), animateLookFor);
 
     //Попап для картинок
     // const imges = $('.imgPop__open');
