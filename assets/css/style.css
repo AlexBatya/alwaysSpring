@@ -403,7 +403,7 @@ main .main__body__container .composition {
   max-width: 83.3333333333vw;
   margin: 29.4252873563vh auto 28.275862069vh auto;
   display: grid;
-  gap: 2.0833333333vw;
+  gap: 4.375vw;
   grid-template-columns: 60% 40%;
   justify-content: center;
 }
@@ -478,7 +478,7 @@ main .main__body__container .composition__img img {
 }
 main .main__body__container .composition__img .borderImgall {
   width: 51.875vw;
-  height: 100%;
+  height: 92.0689655172vh;
   display: block;
   border: 1px solid rgba(255, 255, 255, 0.2);
   position: absolute;

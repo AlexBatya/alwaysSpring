@@ -432,7 +432,7 @@ main{
                 max-width: widthVW(1600px);
                 margin: heightVH(256px) auto heightVH(246px) auto;
                 display: grid;
-                gap: widthVW(40px);
+                gap: widthVW(84px);
                 grid-template-columns: 60% 40%;
                 justify-content: center;
                 &__text{
@@ -504,7 +504,7 @@ main{
                     }
                     .borderImgall{
                         width: widthVW(996px);
-                        height: 100%;
+                        height: heightVH(801px);
                         display: block;
                         border: 1px solid rgba(255, 255, 255, 0.2);
                         position: absolute;
