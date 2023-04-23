@@ -515,6 +515,10 @@ main .main__body__container .gifts .card__name {
   background: #0A0A0E;
   border-radius: 10px;
 }
+main .main__body__container .gifts .card__name .logoCard {
+  width: 10.3322916667vw;
+  height: 7.0114942529vh;
+}
 main .main__body__container .gifts .card__name .usor__up {
   width: 6.3541666667vw;
   position: absolute;
@@ -624,6 +628,7 @@ footer .footer__body__container nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 50px;
 }
 footer .footer__body__container nav ul li {

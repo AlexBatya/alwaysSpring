@@ -24,9 +24,6 @@ $maxWidth: 1920px;
     @return ($pixel*100vw)/$maxWidth
 };
 
-// @function textSize($pixel){
-//     @return ($pixel/16px);
-// };
 
 :root{
     font-size: 16px;
@@ -79,7 +76,6 @@ button{
     font-style: normal;
     font-weight: 400;
     font-size: 0.75rem;
-    // line-height: 13px;
     line-height: 109%;
     text-align: center;
     letter-spacing: 0.15em;
@@ -87,9 +83,18 @@ button{
     color: #FFFFFF;
     transition: 0.5s;
 }
+
 button:hover{
     background-color: white;
     color: #3B181E;
+}
+
+@media(max-width: 800px){
+
+}
+
+@media(max-width: 425px){
+
 }
 
 header{
@@ -147,7 +152,6 @@ header{
             }
             .head__text{
                 margin: heightVH(189px) 0 0 0;
-                // margin: 189px 0 0 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -357,6 +361,7 @@ main{
             .proposal{
                 padding: 0 15px;
                 max-width: 1200px;
+                // max-width: widthVW(1200px);
                 margin:heightVH(255px) auto 0 auto;
                 display: grid;
                 gap: 1%;
@@ -541,6 +546,10 @@ main{
                         align-items: center;
                         background: #0A0A0E;
                         border-radius: 10px;
+                        .logoCard{
+                            width: widthVW(198.38px);
+                            height: heightVH(61px);
+                        }
                         .usor__up{
                             width: widthVW(122px);
                             position: absolute;
@@ -662,6 +671,7 @@ footer{
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    flex-wrap: wrap;
                     gap: 50px;
                     li{
                         list-style: none;
