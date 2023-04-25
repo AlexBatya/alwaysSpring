@@ -3,12 +3,12 @@
 }
 @media (max-width: 767px) {
   :root {
-    font-size: calc(8px + 13.6 * ((100vw - 320px) / 1920));
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   :root {
-    font-size: calc(8px + 8 * (100vw / 1920));
+    font-size: calc(14px + 2 * (100vw / 1920));
   }
 }
 
@@ -406,166 +406,200 @@ main .main__body__container .products .product .block small {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-main .main__body__container .proposal {
-  padding: 0 15px;
-  max-width: 1200px;
-  margin: 29.3103448276vh auto 0 auto;
-  display: grid;
-  gap: 1%;
-  grid-template-columns: 49% 49%;
-}
-main .main__body__container .proposal__text {
+main .main__body__container .imges-container {
+  margin: 31.9540229885vh 0;
+  padding: 0 20px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  width: 35.2083333333vw;
-  height: 47.1264367816vh;
-  position: relative;
-  top: 0;
-  left: 0;
+  gap: 31.3793103448vh;
 }
-main .main__body__container .proposal__text h3 {
-  margin: 0 0 3.5632183908vh 0;
+main .main__body__container .imges-container .proposal {
+  margin: 0 auto;
+  display: flex;
+  gap: 6.3020833333vw;
+  align-items: center;
+}
+main .main__body__container .imges-container .proposal__text h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 3.125rem;
-  line-height: 110%;
+  line-height: 55px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #FFFFFF;
 }
-main .main__body__container .proposal__text .borderBlock {
-  border-top: 2px solid white;
-  width: 4.4791666667vw;
+main .main__body__container .imges-container .proposal__text .borderBlock {
+  margin: 31px 0 25px 0;
+  border-bottom: 1px solid white;
+  width: 85px;
 }
-main .main__body__container .proposal__text p {
-  max-width: 20.8333333333vw;
-  margin: 2.8735632184vh 0 3.5632183908vh 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.125;
-  line-height: 170%;
-  color: #FFFFFF;
-}
-main .main__body__container .proposal__text .proposal__btm {
-  max-width: 260px;
-}
-main .main__body__container .proposal__img {
-  width: 36.3020833333vw;
-  height: 47.1264367816vh;
-  position: relative;
-  display: block;
-}
-main .main__body__container .proposal__img__one {
-  -o-object-position: top;
-     object-position: top;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-  top: -22px;
-  left: -27px;
-  width: 36.3020833333vw;
-  height: 47.1264367816vh;
-  position: absolute;
-  z-index: 1;
-}
-main .main__body__container .proposal__img img {
-  width: 100%;
-}
-main .main__body__container .proposal__img .borderImgall {
-  display: block;
-  width: 36.3020833333vw;
-  height: 47.1264367816vh;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-}
-main .main__body__container .composition {
-  max-width: 83.3333333333vw;
-  margin: 29.4252873563vh auto 28.275862069vh auto;
-  display: grid;
-  gap: 4.375vw;
-  grid-template-columns: 60% 40%;
-  justify-content: center;
-}
-main .main__body__container .composition__text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-main .main__body__container .composition__text h3 {
+main .main__body__container .imges-container .proposal__text p {
+  max-width: 400px;
   margin: 0 0 31px 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3.125rem;
-  line-height: 110%;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-main .main__body__container .composition__text .borderBlock {
-  border-top: 2px solid white;
-  width: 4.4791666667vw;
-}
-main .main__body__container .composition__text p {
-  max-width: 33.8541666667vw;
-  margin: 25px 0 31px 0;
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 170%;
   color: #FFFFFF;
 }
-main .main__body__container .composition__text .composition__btm {
-  max-width: 13.5416666667vw;
-}
-main .main__body__container .composition__text .comprsition__slider {
-  margin: 11.4942528736vh 0 0 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1.1979166667vw;
-}
-main .main__body__container .composition__text .comprsition__slider img {
-  width: 6.40625vw;
-}
-main .main__body__container .composition__img {
-  max-width: 51.875vw;
-  max-height: 92.0689655172vh;
+main .main__body__container .imges-container .proposal__img {
+  width: 100%;
   position: relative;
-  display: block;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
 }
-main .main__body__container .composition__img__one {
-  -o-object-position: top;
-     object-position: top;
+main .main__body__container .imges-container .proposal__img__one {
+  width: 36.3020833333vw;
+  height: 47.1264367816vh;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+main .main__body__container .imges-container .proposal__img__one img {
   -o-object-fit: cover;
      object-fit: cover;
-  display: block;
-  top: -22px;
-  left: -27px;
+  -o-object-position: top;
+     object-position: top;
   width: 36.3020833333vw;
   height: 47.1264367816vh;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
+  top: -15px;
+  left: -15px;
 }
-main .main__body__container .composition__img img {
+main .main__body__container .imges-container .composition {
+  display: flex;
+  max-width: 1600px;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 4.375vw;
+}
+main .main__body__container .imges-container .composition__img {
+  display: flex;
   max-width: 52.0833333333vw;
-  max-height: 98.275862069vh;
-}
-main .main__body__container .composition__img .borderImgall {
-  width: 51.875vw;
-  height: 92.0689655172vh;
-  display: block;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  position: absolute;
-  z-index: 2;
+  width: 100%;
+  position: relative;
   top: 0;
   left: 0;
+}
+main .main__body__container .imges-container .composition__img__one {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 52.0833333333vw;
+  height: 92.0689655172vh;
+}
+main .main__body__container .imges-container .composition__img__one img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  width: 52.0833333333vw;
+  height: 92.0689655172vh;
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: -15px;
+}
+main .main__body__container .imges-container .composition__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .main__body__container .imges-container .composition__text h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 55px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .main__body__container .imges-container .composition__text .borderBlock {
+  margin: 31px 0 25px 0;
+  border-bottom: 1px solid white;
+  width: 85px;
+}
+main .main__body__container .imges-container .composition__text p {
+  max-width: 400px;
+  margin: 0 0 31px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 170%;
+  color: #FFFFFF;
+}
+main .main__body__container .imges-container .composition__text .composition__btm {
+  width: 7.03125vw;
+}
+main .main__body__container .imges-container .composition__text .comprsition__slider {
+  margin: 5.7471264368vh 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 23px;
+}
+main .main__body__container .imges-container .composition__text .comprsition__slider img {
+  width: 6.40625vw;
+  height: 14.1379310345vh;
+}
+@media (max-width: 800px) {
+  main .main__body__container .imges-container .proposal {
+    max-width: 800px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .main__body__container .imges-container .proposal__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  main .main__body__container .imges-container .proposal__img {
+    justify-content: flex-end;
+  }
+  main .main__body__container .imges-container .proposal__img__one {
+    width: 80%;
+  }
+  main .main__body__container .imges-container .proposal__img__one img {
+    width: 100%;
+    height: 100%;
+  }
+  main .main__body__container .imges-container .composition {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .main__body__container .imges-container .composition__text {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .main__body__container .imges-container .composition__text .composition__btm {
+    width: 100%;
+  }
+  main .main__body__container .imges-container .composition__text .comprsition__slider {
+    flex-wrap: wrap;
+  }
+  main .main__body__container .imges-container .composition__text .comprsition__slider img {
+    width: 123px;
+    height: 123px;
+  }
+  main .main__body__container .imges-container .composition__img {
+    justify-content: center;
+  }
+  main .main__body__container .imges-container .composition__img__one {
+    width: 100%;
+  }
+  main .main__body__container .imges-container .composition__img__one img {
+    width: 100%;
+    height: 100%;
+  }
 }
 main .main__body__container .gifts {
   max-width: 62.5vw;
@@ -655,7 +689,6 @@ main .main__body__container .gifts .card__discription img {
   margin: 0 0 2.2988505747vh 0;
 }
 main .main__body__container .suppliers {
-  max-width: 1200px;
   max-width: 62.5vw;
   margin: 3.5416666667vw auto 0 auto;
   display: flex;
@@ -740,38 +773,5 @@ footer .footer__body__container .foot__messages {
   }
   header .header__body__container .head__menu .number {
     display: none;
-  }
-  main .main__body__container .proposal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-  main .main__body__container .proposal__img__one {
-    top: 0;
-    left: 0;
-  }
-  main .main__body__container .proposal__img .borderImgall {
-    display: none;
-  }
-  main .main__body__container .composition {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 100px;
-  }
-  main .main__body__container .composition .composition__img {
-    order: 2;
-    position: relative;
-  }
-  main .main__body__container .composition .composition__img .borderImgall {
-    display: none;
-  }
-  main .main__body__container .composition .composition__img__one {
-    position: relative;
-    width: 100%;
-  }
-  main .main__body__container .composition .composition__img img {
-    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
