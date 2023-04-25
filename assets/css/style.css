@@ -218,12 +218,22 @@ header .header__body__container .head__text h1 {
   margin: 0 0 9.1954022989vh 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 7.5rem;
+  font-size: 120px;
   line-height: 110%;
   text-align: center;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  header .header__body__container .head__text h1 {
+    font-size: calc(50px + 119 * ((100vw - 320px) / 1920));
+  }
+}
+@media (min-width: 767px) {
+  header .header__body__container .head__text h1 {
+    font-size: calc(50px + 70 * (100vw / 1920));
+  }
 }
 header .header__body__container .btms {
   padding: 0 2.0833333333vw 5.1724137931vh 2.0833333333vw;
@@ -275,13 +285,23 @@ main .main__shell {
   margin: 0 auto;
   font-style: normal;
   font-weight: 400;
-  font-size: 13.75rem;
+  font-size: 220px;
   line-height: 110%;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
   opacity: 0.03;
+}
+@media (max-width: 767px) {
+  main .main__shell {
+    font-size: calc(80px + 238 * ((100vw - 320px) / 1920));
+  }
+}
+@media (min-width: 767px) {
+  main .main__shell {
+    font-size: calc(80px + 140 * (100vw / 1920));
+  }
 }
 main .main__body {
   position: relative;
@@ -688,6 +708,31 @@ main .main__body__container .gifts .card__discription img {
   width: 100%;
   margin: 0 0 2.2988505747vh 0;
 }
+@media (max-width: 800px) {
+  main .main__body__container .gifts {
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+  }
+  main .main__body__container .gifts .card {
+    width: 348px;
+    height: 476px;
+  }
+  main .main__body__container .gifts .card__name .logoCard {
+    width: 240px;
+  }
+  main .main__body__container .gifts .card__name .usor__down {
+    width: 80px;
+  }
+  main .main__body__container .gifts .card__name .usor__up {
+    width: 80px;
+  }
+  main .main__body__container .gifts .card__discription p {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
 main .main__body__container .suppliers {
   max-width: 62.5vw;
   margin: 3.5416666667vw auto 0 auto;
@@ -711,6 +756,28 @@ main .main__body__container .suppliers .cards:nth-child(2n) img {
 main .main__body__container .suppliers .cards:nth-child(3n) img {
   width: 13.9583333333vw;
   height: 10.3448275862vh;
+}
+@media (max-width: 500px) {
+  main .main__body__container .suppliers {
+    max-width: 100%;
+    padding: 0 15px;
+    gap: 20px;
+  }
+  main .main__body__container .suppliers .cards {
+    gap: 20px;
+  }
+  main .main__body__container .suppliers .cards:nth-child(1n) img {
+    width: 100%;
+    height: 100%;
+  }
+  main .main__body__container .suppliers .cards:nth-child(2n) img {
+    width: 100%;
+    height: 100%;
+  }
+  main .main__body__container .suppliers .cards:nth-child(3n) img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 #grayCard {
